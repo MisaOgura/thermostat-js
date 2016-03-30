@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      <script src="jquery.js"></script>t;
+      <script src="interface.js"></script>t;
+      <script src="src/thermostat.js"></script>t;
+    </script>
+  </head>
+  <body>
+    <div style="width:300px; height:250px; background-color:yellow;margin:auto;margin-top: 20%">
+      <div style="margin:auto; margin-top:10%; ">
+        <input type='button' id='up' name='up' value='up' onclick='increaseTemperature();'>
+        <input type='button' id='down' name='down' value='down' onclick='decreaseTemperature();'>
+        <input type='button' id='reset' name='reset' value='reset' onclick='tempReset();'>
+        <input type='button' id='mode' name='mode' value='mode' onclick='switchModePowerSaving();'>
+        <input type='button' id='temp' name='temp' value='temp' onclick='currentTemperature();'>
+      </div>
+
+      <div>
+      </div>
+    </div>
+  </body>
+</html>
