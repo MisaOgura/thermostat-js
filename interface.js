@@ -24,8 +24,10 @@ $(document).ready(function() {
     updateTemperature();
   });
 
+
     function updateTemperature() {
     $('#temperature').text(thermostat.currentTemperature() + "\xB0C");
     $('.display').css('background-color', thermostat.displayColor());
+    $('#psm').text(thermostat.displayPowerSaveMode());
   }
 });
