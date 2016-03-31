@@ -27,5 +27,5 @@ $(document).ready(function() {
     function updateTemperature() {
     $('#temperature').text(thermostat.currentTemperature());
     $('.display').css('background-color', thermostat.displayColor());
-  };
+  }
 });

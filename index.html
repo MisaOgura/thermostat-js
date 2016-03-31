@@ -2,10 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Thermostat</title>
   </head>
   <body>
     <section class="display">
+      <h1>Thermostat</h1>
+      <input id='city' type='text' placeholder="city name">
+      <button id='submit'>Submit</button>
+      <p id='weather'></p>
       <h1 id="temperature"></h1>
       <p>
         <button id="up">+</button>
@@ -17,5 +20,6 @@
     <script src="jquery.js"></script>
     <script src="src/thermostat.js"></script>
     <script src="interface.js"></script>
+    <script src="weatherAPI.js"></script>
   </body>
 </html>
