@@ -12,15 +12,15 @@
       <p id='weather'></p>
       <h1 id="temperature"></h1>
       <h4 id="psm"></h4>
-      <p>
-        <button class="icon icon-up" id="up"></button>
-        <button class="icon icon-down"id="down"></button>
-        <button id="reset">reset</button>
+      <form action='/temperature' method='post'>
+        <button class="icon icon-up" id="up" name='temp'></button>
+        <button class="icon icon-down"id="down" name='temp'></button>
+        <button id="reset" name='temp'>reset</button>
         <button id="switchpowersaving">PSM</button>
-      </p>
+      </form>
     </section>
     <script src="jquery.js"></script>
-    <script src="src/thermostat.js"></script>
+    <script src="thermostat.js"></script>
     <script src="interface.js"></script>
     <script src="weatherAPI.js"></script>
   </body>
