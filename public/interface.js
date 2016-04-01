@@ -3,22 +3,26 @@ $(document).ready(function() {
   var thermostat = new Thermostat();
   var temp = thermostat.temperature;
 
+  updateTemperature();
+
   $.ajax({
     type: 'GET',
     url: 'http://localhost:4567/temperature',
     success: function(data){
-      temp = data.temp;
+      temp = (JSON.parse(data)).temp;
+      console.log('inside ajax request '+temp);
     },
     error: function(){
       alert('Error loading temp');
     }
   });
 
-  updateTemperature();
+  console.log('outside '+temp);
 
   $('#up').click(function() {
     thermostat.increaseTemperature();
     updateTemperature();
+    console.log('inside up click '+temp);
   });
 
   $('#down').click(function() {
